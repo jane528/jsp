@@ -12,6 +12,7 @@
 		//out是jsp的内置对象
 		out.print("hello world!");
 		out.print("当前时间为："+new Date().toString());
+		
 	%>
 	<table border="1">
 		<tr>
