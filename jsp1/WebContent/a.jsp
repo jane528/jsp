@@ -9,5 +9,7 @@
 <body>
 	<%@ include file="b.jsp" %>
 	<h1>我是A页面</h1>
+	<%! int i=0; %>
+	<%=i %>
 </body>
 </html>
