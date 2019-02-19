@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="myResult.jsp" method="post">
+	<form action="myResult.jsp" method="post" onsubmit="return checkNum()">
 		<span>请输入第一个数：</span>
 		<input type="text" name="num1" placeholder="请输入整数" id="num1" >
 		<br>
@@ -23,7 +23,8 @@
 			<option value="/">除</option>
 		</select>
 		<br>
-		<input type="submit" value="提交" onclick="return checkNum()">
+		<input type="submit" value="提交">
+		<!-- <input type="submit" value="提交" onclick="return checkNum()">-->
 	</form>
 </body>
 </html>

@@ -6,7 +6,10 @@ function checkNum(){
 	if(num1 == "" || num2 == "" ){
 		window.alert("输入不能为空");
 		return false;
-	}else {
-		return true;
+	}
+	var reg= /^-?\d+$/;
+	if(!reg.test(num1) || !reg.test(num2)){
+		window.alert("请输入整数");
+		return false;
 	}
 }
