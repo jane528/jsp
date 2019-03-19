@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList,com.user2.domain.Users"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -10,14 +11,54 @@
 </head>
 <body>
 	<div class="header">
-		<img src="img/user.png">
+		<ul>
+			<li>
+				<span class="title">用户管理系统</span>
+				<span class="name"><%out.println(request.getParameter("uname")); %></span>
+				<img src="img/12.png" style="width:60px;height:60px;">	
+			</li>
+		</ul>	
 	</div>
 	<div class="content">
-		<div class="content-left">
-		
-		</div>
-		<div class="content-right">
-		
+		<div class="content-middle">
+			<div class="search">
+				<div class="search-title">
+						<span class="cxtj">查询条件</span>
+				</div>
+				<div class="search-content">
+					<form action="/user2/userlistcl" method="post">
+						<span>用户名</span>
+						<input type="text" name="name" placeholder="请输入用户名">
+						<input class="btn" type="submit" value="查询">
+					</form>
+				</div>
+			</div>
+			<div class="userlist">
+				<div class="userlist-title">
+					<span class="yhlb">用户列表</span>
+				</div>
+				<table>
+					<tr>
+						<th>用户名</th>
+						<th>创建时间</th>
+						<th>创建人</th>
+						<th>修改时间</th>
+						<th>修改人</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>admin</td>
+						<td>2019-03-19 10:42:00</td>
+						<td>admin</td>
+						<td>2019-03-19 10:42:00</td>
+						<td>admin</td>
+						<td>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>				
+				</table>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
