@@ -9,4 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  	<servlet-name>LoginCl</servlet-name>
+  	<servlet-class>com.user2.controller.LoginCl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginCl</servlet-name>
+  	<url-pattern>/LoginCl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>UserlistCl</servlet-name>
+  	<servlet-class>com.user2.controller.UserlistCl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserlistCl</servlet-name>
+  	<url-pattern>/UserlistCl</url-pattern>
+  </servlet-mapping>
 </web-app>

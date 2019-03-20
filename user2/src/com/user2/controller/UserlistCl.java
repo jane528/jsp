@@ -15,14 +15,14 @@ import com.user2.domain.*;
 /**
  * Servlet implementation class userlist
  */
-@WebServlet("/userlist")
-public class userlistcl extends HttpServlet {
+@WebServlet("/userlistcl")
+public class UserlistCl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public userlistcl() {
+    public UserlistCl() {
         super();
         // TODO Auto-generated constructor stub
     }

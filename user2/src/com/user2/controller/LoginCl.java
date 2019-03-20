@@ -14,13 +14,13 @@ import com.user2.domain.*;
  * Servlet implementation class logincl
  */
 @WebServlet("/logincl")
-public class logincl extends HttpServlet {
+public class LoginCl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public logincl() {
+    public LoginCl() {
         super();
     }
 

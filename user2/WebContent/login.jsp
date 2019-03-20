@@ -16,7 +16,7 @@
 			<span>欢迎登录</span>
 		</div>
 		<div class="content-center">
-			<form action="/user2/logincl" method="post">
+			<form action="/user2/LoginCl" method="post">
 				<div class="login">
 					<div class="login-content">
 						<span>用户名</span>

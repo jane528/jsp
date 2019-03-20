@@ -26,7 +26,7 @@
 						<span class="cxtj">查询条件</span>
 				</div>
 				<div class="search-content">
-					<form action="/user2/userlistcl" method="post">
+					<form action="/user2/UserlistCl" method="post">
 						<span>用户名</span>
 						<input type="text" name="name" placeholder="请输入用户名">
 						<input class="btn" type="submit" value="查询">
