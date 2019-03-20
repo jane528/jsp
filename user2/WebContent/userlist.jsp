@@ -46,17 +46,35 @@
 						<th>修改人</th>
 						<th>操作</th>
 					</tr>
-					<tr>
-						<td>admin</td>
-						<td>2019-03-19 10:42:00</td>
-						<td>admin</td>
-						<td>2019-03-19 10:42:00</td>
-						<td>admin</td>
-						<td>
-							<a href="#">编辑</a>
-							<a href="#">删除</a>
-						</td>
-					</tr>				
+					<%
+						ArrayList<Users> al = (ArrayList<Users>) request.getAttribute("userlist");
+						if(al!=null){
+							for(Users user:al){	
+					%>
+							<tr>
+								<td><% out.println(user.getName()); %></td>
+								<td><% out.println(user.getCreatetime()); %></td>
+								<td><% out.println(user.getCreateuser()); %></td>
+								<td><% out.println(user.getModifytime()); %></td>
+								<td><% out.println(user.getModifyuser()); %></td>
+								<td>
+									<a href="#">编辑</a>
+									<a href="#">删除</a>
+								</td>	
+							</tr>
+						
+					<%
+							}
+						}
+						if(al == null || al.size()==0){
+							
+					%>
+							<tr>
+								<td colspan="6" align="center"><% out.println("查询无结果"); %></td>
+							</tr>
+					<%	
+						}
+					%>				
 				</table>
 			</div>
 		</div>

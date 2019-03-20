@@ -41,15 +41,17 @@ public class userservice {
 			sql="select * from users where name='%"+uname+"%'";
 		}
 		ResultSet rs = sqlhelper.search(sql);
-		Users user=new Users();
 		if(rs!=null){
 			try {
 				while(rs.next()){
-					user.setName(rs.getString(1));
-					user.setCreatetime(rs.getString(2));
-					user.setCreateuser(rs.getString(3));
-					user.setModifytime(rs.getString(4));
-					user.setModifyuser(rs.getString(5));
+					Users user=new Users();
+					user.setId(rs.getString(1));
+					user.setName(rs.getString(2));
+					user.setPassword(rs.getString(3));
+					user.setCreatetime(rs.getString(4));
+					user.setCreateuser(rs.getString(5));
+					user.setModifytime(rs.getString(6));
+					user.setModifyuser(rs.getString(7));
 					a.add(user);
 				}
 			} catch (SQLException e) {

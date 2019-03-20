@@ -50,9 +50,6 @@ public class UserlistCl extends HttpServlet {
 		//Users user = new Users();
 		ArrayList<Users> a=new ArrayList<Users>();
 		a = us.userlist(name);
-		for(int i=0;i<a.size();i++){
-			System.out.print(a.get(i).getName());
-		}
 		request.setAttribute("userlist", a);
 		request.getRequestDispatcher("userlist.jsp").forward(request,response);
 	}

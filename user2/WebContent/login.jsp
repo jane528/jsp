@@ -17,37 +17,39 @@
 		</div>
 		<div class="content-center">
 			<form action="/user2/LoginCl" method="post">
-				<div class="login">
-					<div class="login-content">
-						<span>用户名</span>
-						<input type="text" name="uname" id="uname">
+				<div>
+					<div class="login">
+						<div class="login-content">
+							<span>用户名</span>
+							<input type="text" name="uname" id="uname">
+						</div>
+						<label>
+							<%
+								if(request.getAttribute("unamemsg")!=null){
+									out.println(request.getAttribute("unamemsg"));
+								}
+							%>
+						</label>
 					</div>
-					<label>
-						<%
-							if(request.getAttribute("unamemsg")!=null){
-								out.println(request.getAttribute("unamemsg"));
-							}
-						%>
-					</label>
-				</div>
 				
-				<div class="login">
-					<div class="login-content">
-						<span>密&nbsp;&nbsp;&nbsp;码</span>
-						<input type="password" name="upass" id="upass">
+					<div class="login">
+						<div class="login-content">
+							<span>密&nbsp;&nbsp;&nbsp;码</span>
+							<input type="password" name="upass" id="upass">
+						</div>
+						<label>
+							<%
+								if(request.getAttribute("upassmsg")!=null){
+									out.println(request.getAttribute("upassmsg"));
+								}
+							%>
+							<%
+								if(request.getAttribute("checkmsg")!=null){
+									out.println(request.getAttribute("checkmsg"));
+								}
+							%>
+						</label>
 					</div>
-					<label>
-						<%
-							if(request.getAttribute("upassmsg")!=null){
-								out.println(request.getAttribute("upassmsg"));
-							}
-						%>
-						<%
-							if(request.getAttribute("checkmsg")!=null){
-								out.println(request.getAttribute("checkmsg"));
-							}
-						%>
-					</label>
 				</div>
 				
 				<div class="login-button">
