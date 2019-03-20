@@ -20,7 +20,30 @@
 		</ul>	
 	</div>
 	<div class="content">
-		<div class="content-middle">
+		<div class="content-left">
+			<div class="nav-left-main">
+				<div class="nav-left-title" >
+					<img src="img/home.png">
+					<span class=""><a href="manager.jsp">首页</a></span>
+				</div>
+			</div>
+			
+			<div class="nav-left-main">
+				<div class="nav-left-title" >
+					<img src="img/um.png">
+					<span class="">用户管理</span>
+				</div>
+			<div class="nav-left-content" id="c1">
+				<ul class="usermanager" >
+					<li><a href="/user2/GotoUser">用户管理</a></li>
+					<li><a href="">用户添加</a></li>
+					<li><a href="">退出登录</a></li>
+				</ul>
+			</div>
+			
+		</div>	
+		</div>
+		<div class="content-right">
 			<div class="search">
 				<div class="search-title">
 						<span class="cxtj">查询条件</span>
@@ -52,11 +75,11 @@
 							for(Users user:al){	
 					%>
 							<tr>
-								<td><% out.println(user.getName()); %></td>
-								<td><% out.println(user.getCreatetime()); %></td>
-								<td><% out.println(user.getCreateuser()); %></td>
-								<td><% out.println(user.getModifytime()); %></td>
-								<td><% out.println(user.getModifyuser()); %></td>
+								<td><%=user.getName() %></td>
+								<td><%=user.getCreatetime() %></td>
+								<td><%=user.getCreateuser() %></td>
+								<td><%=user.getModifytime() %></td>
+								<td><%=user.getModifyuser() %></td>
 								<td>
 									<a href="#">编辑</a>
 									<a href="#">删除</a>

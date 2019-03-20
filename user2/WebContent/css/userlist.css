@@ -35,10 +35,19 @@ li img{
 	margin-right:70px;
 }
 .content{
-	width:75%;
-	height:800px;
-	margin:0 auto;
-	margin-top:30px;
+	margin-top:10px;
+}
+.content-left{
+	width:13%;
+	float:left;
+	height:500px;
+	border:solid 1px rgb(245,245,245);
+}
+.content-right{
+	width:80%;
+	float:left;
+	height:500px;
+	margin-left:20px;
 }
 .search{
 	 width:100%;
@@ -109,6 +118,55 @@ li img{
     text-align:center;
     padding-top:5px;
     padding-bottom:4px;
+}
+
+.nav-left{
+	width:13%;
+	height:500px;
+	border:solid 1px rgb(245,245,245);
+	margin-top:10px;
+	float:left;
+}
+.nav-left-main{
+	margin-top:20px;
+}
+.nav-left-main .nav-left-title{
+	width:100%;
+	height:30px;
+	vertical-align:middle;
+	margin-top:5px;
+	margin-left:20px;
+	font-size:15px;
+}
+.nav-left-main .nav-left-title img{
+	margin-right:10px;
+}
+.nav-left-main .nav-left-title .btn{
+	margin-left:90px;
+}
+.nav-left-content{
+	margin-left:53px;
+	font-size:15px;
+}
+.nav-left-content ul{
+	list-style:none;
+}
+.nav-left-content li{
+	height:35px;
+	line-height:35px;
+}
+.nav-left-content a{
+	text-decoration:none;
+}
+.nav-left-content{
+	display:block;
+}
+.nav-right img{
+	width:80%;
+	height:100%;
+	float:left;
+	margin-left:40px;
+	margin-top:150px;
 }
 
 
