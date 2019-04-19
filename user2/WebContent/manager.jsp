@@ -46,7 +46,6 @@
 			<img src="img/back.png">
 		</div>
 	
-	</div>
-	
+	</div>	
 </body>
 </html>
